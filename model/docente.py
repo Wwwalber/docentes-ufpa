@@ -14,8 +14,8 @@ class Docente:
         elif self._status == 'F':
             status_atual = 'Finalizado'
         return status_atual
+        """ altera o estado do tema do concurso """
     
     def alternar_estado(self, novo_estado):
-        """ altera o estado do tema do concurso """
         self._status = novo_estado
     
