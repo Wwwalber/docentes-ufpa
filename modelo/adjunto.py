@@ -6,6 +6,7 @@ class Adjunto(classeDocente):
     def __init__(self, status):
         super().__init__(status)
         self._tipo = "Concurso para docentes classe Adjunto"
+        self._dedicacao = "Dedicação exclusiva"
 
     def __str__(self):
         return f"{self._tipo}, Status: {self.status}"

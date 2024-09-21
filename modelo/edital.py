@@ -16,7 +16,11 @@ class Edital:
     def listar_tipo_de_docentes(self):
         print(f"\nTipos de docentes para o edital {self._numero}:")
         for i, classe in enumerate(self._classesdocentes, start=1):
-            print(f"{i}. {classe._tipo}")
+            if hasattr(classe, '_dedicacao'):
+                mensagem_adjunto = f'{i}. {classe._tipo}, {classe._dedicacao}'
+                print(mensagem_adjunto)
+            else:
+                print(f'{i}. {classe._tipo}')
 
     def adicionar_unidade(self, unidade):
         self.unidades.append(unidade)

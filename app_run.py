@@ -19,8 +19,6 @@ adjunto7 = Adjunto('P')  # 'P' for 'Pendente'
 adjunto8 = Adjunto('D')  # 'D' for 'Desistiu'
 adjunto9 = Adjunto('T')  # 'T' for 'Transferido'
 
-
-edital3.listar_tipo_de_docentes()
 def main():
     """ inicio do app """
     print(edital1)
