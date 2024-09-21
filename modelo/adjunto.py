@@ -1,10 +1,11 @@
-from model.docente import Docente
+from modelo.classe_docente import classeDocente
 
-class Adjunto(Docente):
+class Adjunto(classeDocente):
     """ Representa um tipo de cargo, uma especialização da classe Docente """
     
-    def __init__(self, tema, status):
-        super().__init__(tema, status)
+    def __init__(self, status):
+        super().__init__(status)
+        self._tipo = "Concurso para docentes classe Adjunto"
 
     def __str__(self):
-        return f"Adjunto: {self.tema}, Status: {self.status}"
+        return f"{self._tipo}, Status: {self.status}"
