@@ -4,4 +4,4 @@ class Unidade:
         self.sigla = sigla
 
     def  __str__(self):
-        return f"Nome: {self.nome} - {self.sigla}"
+        return f"Unidade: {self.nome} - {self.sigla}"
